@@ -79,12 +79,18 @@ def main():
     # Input Data
     print()
     print("==================Fruits Classification Program======================")
-    print("================== Created By Eric T. Cornetto=======================")
+    print("===================Created By Eric T. Cornetto=======================")
+    print("=========================K-Nearest = 7===============================")
     x_input = float(input("Input Width Fruits : "))
     y_input = float(input("Input Height Fruits : "))
     pred = classifier.predict([x_input,y_input]) # predictions
     print("=====================================================================")
     print("K-Nearest : {}".format(pred))
+    print()
+    print("Note : 0 = Orange")
+    print("       1 = Mandarin")
+    print("       2 = Lemons")
+    print("       3 = Apple")
 
 if __name__ == "__main__":
     main()
